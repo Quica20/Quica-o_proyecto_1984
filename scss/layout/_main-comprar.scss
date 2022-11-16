@@ -1,0 +1,27 @@
+.container-xxl{
+    h1{
+        font-size: 10px;
+    }
+}
+.card-body{
+    background-color: #5A1F14;
+    .card-title{
+        font-size: 15px;
+        color: #CC372B;
+        background-color: black;
+        text-align: center;
+    }
+    .card-text{
+        font-size: 12px;
+        text-align: center;
+        color: white;
+    }
+    .btn{
+        background-color: #CC372B;
+        align-items: center;
+        text-align: center;
+    }
+    .btn-primary{
+        color: white;
+    }
+}

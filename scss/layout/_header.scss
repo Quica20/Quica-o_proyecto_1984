@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Sono&display=swap');
+
+nav{
+    background-color: black;
+    height: 100px;
+    width: 100%;
+    .enlace{
+        position: absolute;
+        padding: 20px 50px;
+    }
+    .enlace img{
+        height: 75px;
+    }
+    ul{
+        float: right;
+        margin-right: 20px;
+        li{
+            display: inline-block;
+            line-height: 120px;
+            margin: 0px 5px;
+            a{
+                text-decoration: none;
+                color: white;
+                font-size: 30px;
+                padding: 7px 13px;
+                border-radius: 3px;
+            }
+            a.active, a:hover{
+                background-color: #5A1F14;
+                transition: .5s;
+            }
+        }
+    }
+    .checkbtn{
+            float: right;
+            border: 5px solid #5A1F14;
+            margin: 27px 17px;
+            cursor: pointer;
+            display: none;
+    }
+
+    .checkbtn img{
+        height: 50px;
+    }
+    #check{
+        display: none;
+    }
+}

@@ -1,0 +1,36 @@
+.mainAutor{
+    background-color: black;
+    .containerAutor{
+        display: grid;
+        grid-gap: 5px;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto;
+        /* border: 5px solid #5A1F14; */
+        .bibliografia{
+            grid-column: 2/3;
+            grid-row: 1/2;
+            width: 860px;
+            h1{
+                color: #CC372B;
+                font-size:40px;
+            }
+            p{
+                color: white;
+            }
+        }
+        .ImgGeorge{
+            grid-column: 1/2;
+            grid-row: 1/2;
+            img{
+                height: 565px;
+                width: 480px;
+            }
+        }
+        .bibliografiaDos{
+            grid-column: 1/3;
+            p{
+                color: white;
+            }
+        }
+    }
+}
