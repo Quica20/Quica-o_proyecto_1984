@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Sono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&family=Kdam+Thmor+Pro&family=Quicksand:wght@600&family=Roboto&display=swap');
+
+/* HEADER */
+header{
+    nav{
+        border: 5px solid  #5A1F14;
+        background-color: black;
+        height: 90px;
+        width: 100%; /* Para que ocupe todo el ancho que se ve en la pantalla */
+        display: flex; /* indicamos de esta forma que trabajamos con flex-box */
+        justify-content: space-between;
+        align-items: center;
+        .logo{
+            color:#CC372B;
+            font-family: 'Fira Sans', sans-serif;
+            font-size: 75px;
+            padding: 0 80px;
+            font-weight: bold;
+            font-style: italic; /* Letra en cursiva */
+            
+        }
+        .logo:hover{
+            color: #c9b04e;
+            transform: scale(1.1);
+            transition: 0.1s;
+        }
+        ul.show{
+            top: 65px;
+        }
+        .navBarItems{
+            display: flex;
+            list-style: none;
+            margin-right: 30px;
+            li{
+                border-radius: 3px;
+                margin: 0 15px;
+                a{
+                    padding: 7px 13px;
+                    text-decoration: none;
+                    font-size: 18px;
+                    display: block;
+                    color: #c9b04e;
+                    font-size: 30px;
+                }
+                a.active, a:hover{
+                    color: #CC372B;
+                    transform: scale(1.1);
+                    transition: 0.1s;
+                }
+            }
+        }
+        .btn_menu{
+            margin-right: 30px;
+            font-size: 25px;
+            color: white;
+            cursor: pointer;
+            display: none;
+        }
+    }
+}
+
+/* Responsive tablet site 1024 X 768 */
+
+@media screen and (max-width: 1024px){
+    header{
+        nav{
+            .logo{
+                font-size: 65px;
+                padding-left: 40px;
+            }
+            .navBarItems{
+                li{
+                    a{
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* Responsive mobile 320 X 480 */
+
+@media screen and (max-width:858px) {
+    header{
+        width:auto;
+        nav{
+            height: 65px;
+            .btn_menu{
+                display: inline-flex;
+            }
+            .navBarItems{
+                position: fixed;
+                width: 100vw;
+                height: calc(100% - 65px);
+                background: #414141;
+                top: -100vh;
+                text-align: center;
+                transition: all .4s;
+                flex-direction: column;
+                li{
+                    margin: 30px 0 0 0;
+                    line-height: 30px;
+                    a{
+                        font-size: 20px;
+                        color: white;
+                        font-weight: bold;
+                    }
+                    a:hover{
+                        color: #CC372B;
+                    }
+                }
+                li:hover{
+                    background: none;
+
+                }
+                .logo{
+                    font-size: 25px;
+                    padding-left: 35px;
+                }
+            }
+        }
+    }
+}
+
+/* Responsive mobile 320 si se voltea el celular */
+@media screen and (max-width: 858px) and (orientation: landscape) {
+    .navBarItems{
+        overflow: scroll;
+        height: calc(100% - 65px    );
+        li{
+            margin: 5px 0 0 0;
+        }
+    }
+}
+
+/* nav{
+    background-color: black;
+    height: 100px;
+    width: 100%;
+    .enlace{
+        position: absolute;
+        padding: 20px 50px;
+    }
+    .enlace img{
+        height: 75px;
+    }
+    ul{
+        float: right
+        margin-right: 20px;
+        li{
+            display: inline-block;
+            line-height: 120px;
+            margin: 0px 5px;
+            a{
+                text-decoration: none;
+                color: white;
+                font-size: 30px;
+                padding: 7px 13px;
+                border-radius: 3px;
+            }
+            a.active, a:hover{
+                background-color: #5A1F14;
+                transition: .5s;
+            }
+        }
+    }
+    .checkbtn{
+            float: right;
+            border: 5px solid #5A1F14;
+            margin: 27px 17px;
+            cursor: pointer;
+            display: none;
+    }
+
+    .checkbtn img{
+        height: 50px;
+    }
+    #check{
+        display: none;
+    }
+}
+ */

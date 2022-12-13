@@ -1,0 +1,118 @@
+.mainInicio {
+    margin-top: 5px;
+    background-color: black;
+    .containerInicio {
+        border: 5px solid #5A1F14;
+        display: grid;
+        grid-gap: 10px;
+        grid-template-columns: auto auto auto;
+        grid-template-rows: auto auto;
+        align-content: center;
+        .imgInicio-uno {
+            margin: 5px;
+            grid-column: 1/2;
+            grid-row: 1/3;
+            img {
+                height: 485px;
+                width: auto;
+                border: 3px solid #5A1F14;
+            }
+        }
+        .imgInicio-dos {
+            grid-row: 2/3;
+            grid-column: 2/3;
+            img {
+                height: 290px;
+                width: auto;
+                border: 3px solid #5A1F14;
+            }
+        }
+        .imgInicio-tres {
+            grid-row: 2/3;
+            grid-column: 3/4;
+            img {
+                height: 290px;
+                width: auto;
+                border: 3px solid #5A1F14;
+            }
+        }
+        .txtInicio {
+            grid-row: 1/2;
+            grid-column: 2/4;
+            border: 4px solid #5A1F14;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 5px;
+            h1 {
+                color: #CC372B;
+                font-size: 30px;
+            }
+            p {
+                color: white;
+                font-size: 20px;
+            }
+        }
+    }
+}
+
+/* Responsive tablet site 1024 X 768 */
+@media screen and (max-width: 1024px){
+    .mainInicio{
+        .containerInicio{
+            .imgInicio-uno{
+                display: none;
+                img {
+                    display: none;
+                    height: 195px;
+                    width: auto;
+                }
+            }
+        }
+        .containerInicio{
+            .imgInicio-tres{
+                img {
+                    height: 195px;
+                    width: auto;
+                }
+            }
+    }
+}
+}
+
+/* Responsive mobile 320 X 480 */
+
+@media screen and (max-width:858px) {
+    .mainInicio{
+        .containerInicio{
+            place-content: center;
+            text-align: center;
+            align-content: center;
+        .imgInicio-uno {
+                grid-column: 1/2;
+                grid-row: 1/2;
+                img {
+                    height: 485px;
+                    width: auto;
+                }
+            }
+        }
+        .txtInicio {
+            width: 350px;
+            grid-column: 1/2;
+            grid-row: 2/3;
+        }
+        .imgInicio-dos{
+            display: none;
+            img {
+                display: none;
+            }
+        }
+        .imgInicio-tres{
+            img {
+            width: 420px;
+            }
+        }
+    }
+}

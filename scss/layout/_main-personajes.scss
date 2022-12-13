@@ -1,0 +1,218 @@
+.mainPersonajes{
+    background-color: black;
+    .containerPersonajes{
+        display: grid;
+        grid-gap: 5px;
+        width: 100%;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto auto auto;
+        align-content: center;
+        border: 10px solid black;
+        .winston{
+            grid-column: 1/3;
+            grid-row: 1/3;
+            border: 4px solid  #5A1F14;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            h1{
+                color:  #CC372B;
+                font-size: 40px;
+            }
+            p{
+                color: white;
+                font-size: 25px;
+            }
+        }
+        .julia{
+            grid-column: 1/3;
+            grid-row: 3/4;
+            border: 4px solid #5A1F14;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            h1{
+                color:  #CC372B;
+                font-size:35px;
+            }
+            p{
+                color: white;
+                font-size: 23px;
+            }
+        }
+        .brien{
+            grid-column: 1/2;
+            grid-row: 4/5;
+            border: 4px solid #5A1F14;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            h1{
+                color:  #CC372B;
+                font-size:30px;
+            }
+            p{
+                color: white;
+                font-size: 20px;
+            }
+        }
+        .hermano{
+            grid-column: 2/3;
+            grid-row: 4/5;
+            border: 4px solid #5A1F14;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            h1{
+                color:  #CC372B;
+                font-size:30px;
+            }
+            p{
+                color: white;
+                font-size: 20px;
+            }
+        }
+        .sparson{
+            grid-column: 1/2;
+            grid-row: 6/7;
+            border: 4px solid #5A1F14;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            h1{
+                color:  #CC372B;
+                font-size:30px;
+            }
+            p{
+                color: white;
+                font-size: 20px;
+            }
+        }
+        .tom{
+            grid-column: 2/3;
+            grid-row: 6/7;
+            border: 4px solid #5A1F14;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            h1{
+                color:  #CC372B;
+                font-size:30px;
+            }
+            p{
+                color: white;
+                font-size: 20px;
+            }
+        }
+        .tillotson{
+            grid-column: 1/2;
+            grid-row: 8/9;
+            border: 4px solid #5A1F14;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            h1{
+                color:  #CC372B;
+                font-size:30px;
+            }
+            p{
+                color: white;
+                font-size: 20px;
+            }
+        }
+        .ample{
+            grid-column: 2/3;
+            grid-row: 8/9;
+            border: 4px solid #5A1F14;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            h1{
+                color:  #CC372B;
+                font-size:30px;
+            }
+            p{
+                color: white;
+                font-size: 20px;
+            }
+    }
+}}
+
+@media screen and (max-width:858px) {
+    .mainPersonajes{
+        .containerPersonajes{
+            .winston{
+                h1{
+                    font-size: 30px;
+                }
+                p{
+                    font-size: 20px;
+                }
+            }
+            .julia{
+                h1{
+                    font-size: 30px;
+                }
+                p{
+                    font-size: 20px;
+                }
+            }
+            .brien{
+                h1{
+                    font-size: 30px;
+                }
+                p{
+                    font-size: 20px;
+                }
+            }
+            .hermano{
+                h1{
+                    font-size: 30px;
+                }
+                p{
+                    font-size: 20px;
+                }
+            }
+            .sparson{
+                h1{
+                    font-size: 30px;
+                }
+                p{
+                    font-size: 20px;
+                }
+            }
+            .tom{
+                h1{
+                    font-size: 30px;
+                }
+                p{
+                    font-size: 20px;
+                }
+            }
+            .tillotson{
+                h1{
+                    font-size: 30px;
+                }
+                p{
+                    font-size: 20px;
+                }
+            }
+            .ample{
+                h1{
+                    font-size: 30px;
+                }
+                p{
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+}
